@@ -1,19 +1,13 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, } from 'lucide-react';
 import ModeToggle from './theme-button';
 import Favicon from "@/AS.svg"
 export default function ResponsiveNavBar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [isDark, setIsDark] = useState(true);
-    const [isSpinning, setIsSpinning] = useState(false);
+
     const location = useLocation();
 
-    const toggleTheme = () => {
-        setIsSpinning(true);
-        setIsDark(!isDark);
-        setTimeout(() => setIsSpinning(false), 500);
-    };
 
     const navItems = [
         { name: 'Portfolio', path: '/portfolio' },

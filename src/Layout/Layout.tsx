@@ -50,7 +50,7 @@ export default function Dashboard() {
                 </div>
 
                 {/* Main Content */}
-                <div className="flex-1 overflow-y-auto h-full">
+                <div className="flex-1 overflow-y-auto h-full no-scrollbar">
                     <div className="p-6 lg:p-8 max-w-full">
                         <Outlet />
                     </div>
