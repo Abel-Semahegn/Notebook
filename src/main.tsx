@@ -11,7 +11,7 @@ import Layout from "@/Layout/Layout"
 const root = document.getElementById("root");
 
 ReactDOM.createRoot(root!).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/Notebook">
     <ThemeProvider defaultTheme="dark" storageKey="ui-theme">
       <Routes>
         <Route element={<Layout />}>
