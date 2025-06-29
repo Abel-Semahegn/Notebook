@@ -12,13 +12,13 @@ export default function Dashboard() {
             
             <div className="flex-1 flex h-full min-h-0">
                 {/* Sidebar */}
-                <div className="hidden lg:flex w-80 h-full flex-col pt-8 px-6 flex-shrink-0 border-r">
+                <div className="hidden lg:flex w-80 h-full flex-col pt-8 px-6 flex-shrink-0 items-center">
                     <Avatar className="size-32 mb-4">
                         <AvatarImage src="https://i.imgur.com/6Zem1Ew.png" />
                         <AvatarFallback>AS</AvatarFallback>
                     </Avatar>
                     
-                    <div className="w-full flex flex-col">
+                    <div className=" flex flex-col ">
                         <div className="font-medium text-xl mb-6">
                             Abel-Semahegn
                         </div>
@@ -50,8 +50,8 @@ export default function Dashboard() {
                 </div>
 
                 {/* Main Content */}
-                <div className="flex-1 overflow-y-auto h-full no-scrollbar">
-                    <div className="p-6 lg:p-8 max-w-full">
+                <div className="flex-1 overflow-y-auto h-full no-scrollbar w-full">
+                    <div className="p-6 lg:p-8 w-full">
                         <Outlet />
                     </div>
                 </div>

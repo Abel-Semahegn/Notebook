@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import { ThemeProvider } from "@/components/theme-provider"
 import Home from '@/pages/Home'
 import Portfolio from './pages/Portfolio';
-
+import Post from '@/pages/Post';
 import Journal from './pages/Journal';
 import Layout from "@/Layout/Layout"
 const root = document.getElementById("root");
@@ -19,6 +19,8 @@ ReactDOM.createRoot(root!).render(
           <Route path="/Portfolio" element={<Portfolio />} />
 
           <Route path="/Journal" element={<Journal />} />
+          <Route path="/Post/:slug" element={<Post />} />
+
         </Route>
       </Routes>
     </ThemeProvider>
