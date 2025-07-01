@@ -7,7 +7,7 @@ export default function Articlecard({
     articleUrl = "tmp.md"
 }) {
     return (
-        <Link to={"/Post/"+articleUrl}>
+        <Link to={"/journal/"+articleUrl}>
 
             <div className="relative w-80 h-96 rounded-lg overflow-hidden shadow-lg bg-background">
                 {/* Background Image */}

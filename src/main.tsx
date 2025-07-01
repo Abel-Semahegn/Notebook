@@ -19,7 +19,7 @@ ReactDOM.createRoot(root!).render(
           <Route path="/Portfolio" element={<Portfolio />} />
 
           <Route path="/Journal" element={<Journal />} />
-          <Route path="/Post/:slug" element={<Post />} />
+          <Route path="/Journal/:slug" element={<Post />} />
 
         </Route>
       </Routes>
